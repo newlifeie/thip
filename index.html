@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<!-- saved from url=(0105)file:///C:/Users/Administrator/Desktop/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9%20(7)/amz/index.html -->
+<html lang="th" class="translated-ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!--<base href="">--><base href=".">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <link rel="shortcut icon" href="file:///C:/Users/Administrator/Desktop/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9%20(7)/amz/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./Amazon reward program_files/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Amazon reward program_files/bundle_sa.css">
+			<script src="./Amazon reward program_files/jquery.min.js.下载"></script>
+    <script type="text/javascript">
+    /*=============HELPER================*/
+    var Helper = (function() {
+
+      var data = [];
+
+      var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+      var days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+
+      function setDays(d) {
+        if ((d.constructor !== Array) || d.length !== 7)
+          return false;
+
+        days = d;
+      }
+
+      function setMonths(m) {
+        if ((m.constructor !== Array) || m.length !== 12)
+          return false;
+
+        months = m;
+      }
+
+      function getDate() {
+        var now = new Date();
+        var month = typeof(months[now.getMonth()]) == 'undefined' ? now.getMonth() : months[now.getMonth()];
+        return (now.getDate()) + " " + month + " " + now.getFullYear();
+      }
+
+      function getMonth() {
+        var now = new Date();
+        var month = typeof(months[now.getMonth()]) == 'undefined' ? now.getMonth() : months[now.getMonth()];
+        return month;
+      }
+
+      function getDay() {
+        var now = new Date();
+        var day = typeof(days[now.getDay()]) == 'undefined' ? now.getDay() : days[now.getDay()];
+        return day;
+      }
+
+      function getDayOfMonth() {
+        var now = new Date();
+        var day = ('0' + now.getDate()).slice(-2);
+        return day;
+      }
+
+      function getUrlParameter(name) {
+        name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+        var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+        var results = regex.exec(location.search);
+        return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+      }
+
+      function findAncestor(element, name) {
+        while ((element = element.parentElement) && !element.classList.contains(name));
+        return element;
+      }
+
+      function bindOnQuery(query, callback, action = 'click') {
+        var elements = document.querySelectorAll(query);
+        for (var i = 0; i < elements.length; i++) {
+          elements[i].addEventListener(action, callback, false);
+        }
+      }
+
+      function bindOnId(name, callback, action = 'click') {
+        var element = document.getElementById(name);
+        element.addEventListener(action, callback, false);
+      }
+
+      function replaceMarkers(text, markers) {
+        for (key in markers) {
+          var search = '%'+ key +'%';
+          text = text.replace(new RegExp(search, 'g'), markers[key]);
+        }
+
+        return text;
+      }
+
+      return {
+        setDays: setDays,
+        setMonths: setMonths,
+        getDate: getDate,
+        getDay: getDay,
+        getMonth: getMonth,
+        getDayOfMonth: getDayOfMonth,
+        getUrlParameter: getUrlParameter,
+        findAncestor: findAncestor,
+        bindOnQuery: bindOnQuery,
+        bindOnId: bindOnId,
+        replaceMarkers: replaceMarkers
+      };
+
+    })();
+    </script>
+    <title>Amazon reward program</title>
+<link type="text/css" rel="stylesheet" charset="UTF-8" href="./Amazon reward program_files/translateelement.css"></head>
+<body class="modal-open"><div class="tingle-modal" style="display: none;"><div class="tingle-modal-box"><div class="tingle-modal-box__content"></div><div class="tingle-modal-box__footer"><button></button></div></div></div><div class="tingle-modal" style="display: none;"><div class="tingle-modal-box"><div class="tingle-modal-box__content"></div><div class="tingle-modal-box__footer"><button></button></div></div></div><div class="tingle-modal" style="display: none;"><div class="tingle-modal-box"><div class="tingle-modal-box__content"></div><div class="tingle-modal-box__footer"><button></button></div></div></div>
+
+			<header>
+		  <div class="logo-wrap">
+		    <div class="container">
+		      <div class="row">
+		        <div class="col-xs-12 col-md-8 col-md-offset-2 ">
+		          <table style="width: 100%;">
+		            <tbody><tr>
+		              <td class="logo">
+		                <img src="./Amazon reward program_files/s-l.png">
+		              </td>
+		              <td class="lang">
+		                
+		              </td>
+		            </tr>
+		          </tbody></table>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="slogan-wrap">
+		    <div class="container">
+		      <div class="row">
+		        <div class="col-xs-12 col-md-8 col-md-offset-2 slogan text-xs-left"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+		         โปรแกรมรางวัลของ Amazon
+		        </font></font></div>
+		      </div>
+		    </div>
+		  </div>
+		</header>
+		<div class="container body-container">
+		<div class="row">
+			<div class="lead-container col-xs-12 col-md-8 col-md-offset-2">
+				<div id="recipe-row" class="row">
+					<div class="col-xs-12 recipe-content">
+						<div class="row">
+							<div class="col-xs-1">
+								<div class="icon-round" style="background: url(img/samsung-ico.png) no-repeat;"></div>
+							</div>
+							<div class="col-xs-10 col-md-11">
+								<div class="recipe-header">
+									<div class="phrase"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+										ยินดีด้วย!
+									</font></font></div>
+									<div class="date_full">
+										<script>document.write(Helper.getDate())</script><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">28 เมษายน 2564
+									</font></font></div>
+								</div>
+							</div>
+						</div>
+						<br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+						ทุก</font></font><script>document.write(Helper.getDay())</script><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">วันพุธเราเลือกผู้ใช้หลายคนเพื่อทำแบบสำรวจสั้น ๆ </font><font style="vertical-align: inherit;">ในทางกลับกันเราขอเสนอโอกาสให้คุณได้รับของขวัญอันมีค่าจากผู้สนับสนุนของเรา </font><font style="vertical-align: inherit;">แบบสำรวจนี้ช่วยให้เราเข้าใจคุณได้ดีขึ้นและทำให้ผลิตภัณฑ์ของเราดีขึ้น </font><font style="vertical-align: inherit;">จะใช้เวลาไม่เกิน 30 วินาที
+</font></font><br><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ทุกสัปดาห์ผู้ใช้ที่สุ่มเลือกเพียง 100 คนเท่านั้นที่จะได้รับคำเชิญนี้ </font><font style="vertical-align: inherit;">แต่ละรางวัลมีจำนวน จำกัด
+
+						</font></font><br>
+						<div class="timer"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+						คุณมี</font><span class="marked"><font style="vertical-align: inherit;">เวลา</font></span></font><span class="marked"><span id="timer-mins"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">NaN</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">นาที</font></font><span id="timer-secs"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">NaN</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">วินาที</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ในการเข้าร่วมให้เสร็จสิ้นก่อนที่เราจะมอบโอกาสให้กับผู้ใช้คนต่อไป! </font><font style="vertical-align: inherit;">โชคดี!
+						</font></font></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+	<div class="qu-wrap col-xs-12 col-md-8 col-md-offset-2 ">
+		<div class="row">
+										<div class="qu-group col-xs-12">
+					<div class="row">
+						<div class="qu-group-header col-xs-12"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							คำถามที่ 1 จาก 7: คุณซื้อสินค้าออนไลน์บ่อยแค่ไหน?
+						</font></font></div>
+					</div>
+									<div class="row">
+						<div class="qu col-xs-12 col-md-8 col-md-offset-2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							นาน ๆ ครั้ง
+						</font></font></div>
+					</div>
+									<div class="row">
+						<div class="qu col-xs-12 col-md-8 col-md-offset-2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+						 สัปดาห์ละครั้ง / สองครั้ง
+						</font></font></div>
+					</div>
+									<div class="row">
+						<div class="qu col-xs-12 col-md-8 col-md-offset-2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							3-4 ครั้งต่อสัปดาห์
+						</font></font></div>
+					</div>
+					<div class="row">
+						<div class="qu col-xs-12 col-md-8 col-md-offset-2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+							5 หรือมากกว่าต่อสัปดาห์
+						</font></font></div>
+					</div>
+								</div>
+							<div class="qu-group col-xs-12" style="display: none;">
+					<div class="row">
+						<div class="qu-group-header col-xs-12">
+							คำถามที่ 2 จาก 7: คุณใช้อุปกรณ์อะไรในการซื้อของออนไลน์เป็นหลัก?
+						</div>
+					</div>
+									<div class="row">
+						<div class="qu col-xs-12 col-md-8 col-md-offset-2">
+							สมาร์ทโฟน
+						</div>
+					</div>
+									<div class="row">
+						<div class="qu col-xs-12 col-md-8 col-md-offset-2">
+							ยาเม็ด
+						</div>
+					</div>
+					<div class="row">
+						<div class="qu col-xs-12 col-md-8 col-md-offset-2">
+							พีซี / โน๊ตบุ๊ค
+						</div>
+					</div>
+					</div>
+							<div class="qu-group col-xs-12" style="display: none;">
+					<div class="row">
+						<div class="qu-group-header col-xs-12">
+							คำถามที่ 3 จาก 7: อะไรคือเหตุผลหลักในการซื้อของออนไลน์?
+						</div>
+					</div>
+									<div class="row">
+						<div class="qu col-xs-12 col-md-8 col-md-offset-2">
+							ราคา & โปรโมชั่น
+						</div>
+					</div>
+									<div class="row">
+						<div class="qu col-xs-12 col-md-8 col-md-offset-2">
+							ความสะดวก
+						</div>
+					</div>
+								<div class="row">
+						<div class="qu col-xs-12 col-md-8 col-md-offset-2">
+							ผลิตภัณฑ์ที่หลากหลายo90in
+						</div>
+					</div>
+					<div class="row">
+						<div class="qu col-xs-12 col-md-8 col-md-offset-2">
+							การเว้นระยะห่างระหว่างบุคคล
+						</div>
+					</div>
+								</div>
+								
+								<div class="qu-group col-xs-12" style="display: none;">
+					<div class="row">
+						<div class="qu-group-header col-xs-12">
+							คำถาม 4 จาก 7: คุณมักจะมองหาอะไร?
+						</div>
+					</div>
+									<div class="row">
+						<div class="qu col-xs-12 col-md-8 col-md-offset-2">
+							เสื้อผ้า / เครื่องประดับ
+						</div>
+					</div>
+									<div class="row">
+						<div class="qu col-xs-12 col-md-8 col-md-offset-2">
+							กระเป๋า / กระเป๋าสตางค์ / กระเป๋า
+						</div>
+					</div>
+					<div class="row">
+						<div class="qu col-xs-12 col-md-8 col-md-offset-2">
+							อิเล็กทรอนิกส์ / แกดเจ็ต
+						</div>
+					</div>
+					<div class="row">
+						<div class="qu col-xs-12 col-md-8 col-md-offset-2">
+							อาหาร / ของชำ
+						</div>
+					</div>
+					<div class="row">
+						<div class="qu col-xs-12 col-md-8 col-md-offset-2">
+							อื่น ๆ
+						</div>
+					</div>
+								</div>
+								
+								<div class="qu-group col-xs-12" style="display: none;">
+					<div class="row">
+						<div class="qu-group-header col-xs-12">
+							คำถามที่ 5 จาก 7: คุณชอบซื้อสินค้าที่ร้านค้าจริงหรือไม่? ถ้าใช่สาเหตุหลักคืออะไร?
+						</div>
+					</div>
+									<div class="row">
+						<div class="qu col-xs-12 col-md-8 col-md-offset-2">
+							ภาพและสัมผัส
+						</div>
+					</div>
+									<div class="row">
+						<div class="qu col-xs-12 col-md-8 col-md-offset-2">
+							ความน่าเชื่อถือ
+						</div>
+					</div>
+									<div class="row">
+						<div class="qu col-xs-12 col-md-8 col-md-offset-2">
+							บริการลูกค้า
+						</div>
+					</div>
+						<div class="row">
+						<div class="qu col-xs-12 col-md-8 col-md-offset-2">
+							ไม่ฉันชอบซื้อของออนไลน์มากกว่า
+						</div>
+					</div>
+								</div>
+								<div class="qu-group col-xs-12" style="display: none;">
+					<div class="row">
+						<div class="qu-group-header col-xs-12">
+							คำถาม 6 จาก 7: คุณอายุเท่าไหร่?
+						</div>
+					</div>
+										<div class="row">
+						<div class="qu col-xs-12 col-md-8 col-md-offset-2">
+							ต่ำกว่า 18
+						</div>
+					</div>
+									<div class="row">
+						<div class="qu col-xs-12 col-md-8 col-md-offset-2">
+							18-25
+						</div>
+					</div>
+									<div class="row">
+						<div class="qu col-xs-12 col-md-8 col-md-offset-2">
+							26-34
+						</div>
+					</div>
+									<div class="row">
+						<div class="qu col-xs-12 col-md-8 col-md-offset-2">
+							35-54
+						</div>
+					</div>
+					<div class="row">
+						<div class="qu col-xs-12 col-md-8 col-md-offset-2">
+							55 ขึ้นไป
+						</div>
+					</div>
+								</div>
+								
+								<div class="qu-group col-xs-12" style="display: none;">
+					<div class="row">
+						<div class="qu-group-header col-xs-12">
+							คำถาม 7 จาก 7: คุณเป็นเพศอะไร?
+						</div>
+					</div>
+									<div class="row">
+						<div class="qu col-xs-12 col-md-8 col-md-offset-2">
+							ชาย
+						</div>
+					</div>
+									<div class="row">
+						<div class="qu col-xs-12 col-md-8 col-md-offset-2">
+							หญิง
+						</div>
+					</div>
+					</div>
+									<div id="qu-progress" class="col-xs-12" style="display: none;">
+				<div class="row">
+					<div class="qu-group-header col-xs-12">
+					</div>
+				</div>
+				<div class="row">
+					<div id="qu-progress-state" class="col-xs-6 col-md-4 col-md-offset-2 text-left">
+						สถานะ
+					</div>
+					<div id="qu-progress-percent" class="col-xs-6 col-md-4 text-right">
+						0%
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-md-8 col-md-offset-2 qu-progress-wrap">
+						<div id="qu-progress-bar">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div id="qu-checkpoint-10" rel="Answer verification" class="col-xs-10 col-md-offset-2 qu-checkpoint">
+						<table>
+							<tbody><tr>
+								<td>
+									<div id="qu-mark-10" class="qu-mark"></div>
+								</td>
+								<td>
+								  <span class="qu-checkpoint-desc">คุณตอบคำถามทั้งหมด (7/7) แล้ว</span>
+								</td>
+							</tr>
+						</tbody></table>
+					</div>
+				</div>
+				<div class="row">
+					<div id="qu-checkpoint-20" rel="IP address verification" class="col-xs-10 col-md-offset-2 qu-checkpoint">
+						<table>
+							<tbody><tr>
+								<td>
+									<div id="qu-mark-20" class="qu-mark"></div>
+								</td>
+								<td>
+									<span class="qu-checkpoint-desc">ไม่มีการส่งคำถามซ้ำจากที่อยู่ IP ของคุณ</span>
+								</td>
+							</tr>
+						</tbody></table>
+					</div>
+				</div>
+				<div class="row">
+					<div id="qu-checkpoint-30" rel="Gift selection" class="col-xs-10 col-md-offset-2 qu-checkpoint">
+						<table>
+							<tbody><tr>
+								<td>
+									<div id="qu-mark-30" class="qu-mark"></div>
+								</td>
+								<td>
+									<span class="qu-checkpoint-desc">เราขอขอบคุณสำหรับการมีส่วนร่วมของคุณและนี่คือโทเค็นเล็ก ๆ น้อย ๆ จากเรา!</span>
+								</td>
+							</tr>
+						</tbody></table>
+					</div>
+				</div>
+			</div>
+						<div id="qu-prize" class="col-xs-12 col-md-8 col-md-offset-2" style="display: none;">
+				<div class="row">
+					<div class="qu-group-header col-xs-12">
+						รับของขวัญของคุณตอนนี้:
+					</div>
+				</div>
+									<div class="row qu-prize-row">
+							<div class="col-xs-5 text-xs-right qu-item">
+								<img class="prize-image clickable" src="./Amazon reward program_files/iphone-11.png" width="70%">
+							</div>
+							<div class="col-xs-7 text-xs-left qu-prize-description">
+								<br>
+								<span class="qu-prize-name clickable">Apple iPhone 11</span>
+								<span>6.1-inch / 64 GB Fully Unlocked</span><br>
+							 <strong>Worth:</strong> $699.00<br>
+								<strong>Remaining quantity:</strong><span class="qu-yourprice-value"> 2 units</span><br>
+								<strong>(Secure shipping fee applies)</strong><br>
+								<a href="https://gdmtrck.com/?a=119117&c=228415&mt=16" class="qu-take-it" _msthash="509782" _msttexthash="95498" _msthidden="1">
+									อ้างสิทธิ์
+								</a>
+							</div>
+						</div>
+													<div class="row qu-prize-row qu-opacied">
+						<div class="col-xs-5 text-xs-right qu-item">
+								<img class="prize-image" src="./Amazon reward program_files/iphone-11-pro.png" width="70%">
+						</div>
+						<div class="col-xs-7 text-xs-left qu-prize-description">
+							<span class="qu-prize-name">Apple iPhone 11 Pro</span>
+							<span>5.8-inch display / 64 GB</span><br>
+							 <strong>Worth:</strong> $999.00<br>
+							<strong>Remaining quality:</strong>  0 unit<br>
+							<strong>(Secure shipping fee applies)</strong><br>
+							<div class="qu-btn-dis">
+								Out of stock 
+							</div>
+						</div>
+					</div>
+									
+							</div>
+		</div>
+	</div>
+</div>
+		<div class="row" id="comment-row">
+	<div class="col-xs-12 col-md-8 col-md-offset-2 comment-container">
+
+		<!-- Comments head -->
+		<div class="row">
+			<div class="col-xs-12 text-center comment-header"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+				ความคิดเห็น:
+			</font></font></div>
+		</div>
+
+		<!-- Comments -->
+								<div class="row comment-wrap">
+			<div class="col-xs-2 text-right">
+				<img class="face-round" src="./Amazon reward program_files/Amber_Campbell.jpg">
+			</div>
+			<div class="col-xs-10 col-md-8 comment-desc">
+				<span class="name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">แอมเบอร์แคมป์เบล</font></font></span>
+				<br>
+				<strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">OMG นี่เป็นเรื่องที่ไม่คาดคิดอย่างแน่นอนฉันคิดว่ามันเป็นเรื่องตลกที่ง่อย ๆ แต่ตอนนี้โทรศัพท์เข้ามาจริงๆ ...</font></font></strong>
+				<br><img src="./Amazon reward program_files/FB_35263645.jpg" style="width: 180px; height: auto;"><br>
+				<small class="date"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">44 นาทีที่แล้ว</font></font></small>
+			</div>
+		</div>
+				<div class="row comment-wrap">
+			<div class="col-xs-2 text-right">
+				<img class="face-round" src="./Amazon reward program_files/Elliott_Coleman.jpg">
+			</div>
+			<div class="col-xs-10 col-md-8 comment-desc">
+				<span class="name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">เอลเลียตโคลแมน</font></font></span>
+				<br>
+				<strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ฉันทำของแบบนี้มาตลอดและไม่เคยได้มันมา แต่มันต่างออกไป! </font><font style="vertical-align: inherit;">ไม่อยากจะเชื่อเลยว่าตอนนี้ฉันมี iPhone 11 แล้ว! </font><font style="vertical-align: inherit;">HAHAHA Amazon พวกคุณสุดยอดมาก!</font></font></strong>
+				<br><img src="./Amazon reward program_files/FB_094853.jpg" style="width: 180px; height: auto;"><br>
+				<small class="date"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">50 นาทีที่แล้ว</font></font></small>
+			</div>
+		</div>
+				<div class="row comment-wrap">
+			<div class="col-xs-2 text-right">
+				<img class="face-round" src="./Amazon reward program_files/Jason_Hemenway.jpg">
+			</div>
+			<div class="col-xs-10 col-md-8 comment-desc">
+				<span class="name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Jason Hemenway</font></font></span>
+				<br>
+				<strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Yo </font></font><span style="color: #3b5998;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">@Maria Kozak</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ง่ายมาก! </font><font style="vertical-align: inherit;">ฉันได้ของฉันในอีก 10 วันต่อมา </font><font style="vertical-align: inherit;">คือ Amazon พวกเขาจะติดต่อคุณ </font><font style="vertical-align: inherit;">ไม่ต้องกังวล. </font><font style="vertical-align: inherit;">ลาก่อน</font></font></strong>
+				<br>
+				<small class="date"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2 ชั่วโมงที่แล้ว</font></font></small>
+			</div>
+		</div>
+				<div class="row comment-wrap">
+			<div class="col-xs-2 text-right">
+				<img class="face-round" src="./Amazon reward program_files/Maria_Kozak.jpg">
+			</div>
+			<div class="col-xs-10 col-md-8 comment-desc">
+				<span class="name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Maria Kozak</font></font></span>
+				<br>
+				<strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">เรียน Amazon ฉันสนับสนุนคุณมาหลายปีแล้วและคุณยังรอฉันอยู่ </font><font style="vertical-align: inherit;">ผ่านมา 3 วันแล้ว </font><font style="vertical-align: inherit;">โปรดติดต่อกลับมาหาฉัน</font></font></strong>
+				<br>
+				<small class="date"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3 ชั่วโมงที่แล้ว</font></font></small>
+			</div>
+		</div>
+				<div class="row comment-wrap">
+			<div class="col-xs-2 text-right">
+				<img class="face-round" src="./Amazon reward program_files/Kianna_Duncan.jpg">
+			</div>
+			<div class="col-xs-10 col-md-8 comment-desc">
+				<span class="name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Kianna Duncan</font></font></span>
+				<br>
+				<strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">USPS เพิ่งโทรหาฉันเพื่อยืนยันที่อยู่! </font><font style="vertical-align: inherit;">แทบรอไม่ไหวแล้วที่จะมาถึงในภายหลัง!</font></font></strong>
+				<br>
+				<small class="date"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4 ชั่วโมงที่แล้ว</font></font></small>
+			</div>
+		</div>
+				<div class="row comment-wrap">
+			<div class="col-xs-2 text-right">
+				<img class="face-round" src="./Amazon reward program_files/Heather_Walker.jpg">
+			</div>
+			<div class="col-xs-10 col-md-8 comment-desc">
+				<span class="name">เฮเธอร์วอล์คเกอร์</span>
+				<br>
+				<strong>เรื่องแบบนี้ฉันคิดว่าฉันจะได้รับมันฮ่า ๆ</strong>
+				<br><img src="./Amazon reward program_files/FB_1235.jpg" style="width: 180px; height: auto;"><br>
+				<small class="date">4 hours ago</small>
+			</div>
+		</div>
+<div class="row comment-wrap">
+			<div class="col-xs-2 text-right">
+				<img class="face-round" src="./Amazon reward program_files/Caleb_Denson.jpg">
+			</div>
+			<div class="col-xs-10 col-md-8 comment-desc">
+				<span class="name">Caleb Denson</span>
+				<br>
+				<strong>Best <span style="color: #3b5998;">#stayhome</span> activity hallelujah!</strong>
+				<br>
+				<small class="date">4 hours ago</small>
+			</div>
+		</div>
+		<div class="row comment-wrap">
+			<div class="col-xs-2 text-right">
+				<img class="face-round" src="./Amazon reward program_files/Christopher_Hansen.jpg">
+			</div>
+			<div class="col-xs-10 col-md-8 comment-desc">
+				<span class="name">คริสโตเฟอร์แฮนเซน</span>
+				<br>
+				<strong>บ๊ายบาย !!! ดูสิ่งที่ฉันได้มาที่นี่</strong>
+				<br><img src="./Amazon reward program_files/FB_34jlk235.jpg" style="width: 180px; height: auto;"><br>
+				<small class="date">4 ชั่วโมงที่แล้ว</small>
+			</div>
+		</div>
+		<div class="row comment-wrap">
+			<div class="col-xs-2 text-right">
+				<img class="face-round" src="./Amazon reward program_files/Teresa_Dunn.jpg">
+			</div>
+			<div class="col-xs-10 col-md-8 comment-desc">
+				<span class="name">เทเรซาดันน์</span>
+				<br>
+				<strong>นี่คือเรื่องจริง? ทำไม Amazon ถึงโง่มาก</strong>
+				<br>
+				<small class="date">4 ชั่วโมงที่แล้ว</small>
+			</div>
+		</div>
+		<div class="row comment-wrap">
+			<div class="col-xs-2 text-right">
+				<img class="face-round" src="./Amazon reward program_files/Guy_Bailey.jpg">
+			</div>
+			<div class="col-xs-10 col-md-8 comment-desc">
+				<span class="name">Guy Bailey</span>
+				<br>
+				<strong>ฉันทำทันทีหลังจากอ่านความคิดเห็น รู้สึกตื่นตาตื่นใจหลังจากอยู่บ้านมานาน </strong>
+				<br>
+				<small class="date">4 ชั่วโมงที่แล้ว</small>
+			</div>
+		</div>
+		<div class="row comment-wrap">
+			<div class="col-xs-2 text-right">
+				<img class="face-round" src="./Amazon reward program_files/Maryrose_Mauro.jpg">
+			</div>
+			<div class="col-xs-10 col-md-8 comment-desc">
+				<span class="name">Maryrose Mauro</span>
+				<br>
+				<strong>ฉันยังรักโทรศัพท์ Google ของฉันฮ่า ๆ ! นำเสนอเซอร์ไพรส์วันเกิดพ่อสัปดาห์หน้า! รักทุกคน Amazon XOXO</strong>
+				<br>
+				<small class="date">4 ชั่วโมงที่แล้ว</small>
+			</div>
+		</div>
+
+		<!-- Comment Form -->
+		<div class="row comment-wrap">
+			<div class="col-xs-12 text-center">
+				<textarea id="comment-area"></textarea>
+			</div>
+			<div class="col-xs-12 text-center">
+				<span id="comment-post" onclick="alert(&#39;Thank you! Your comment has been sent for moderation&#39;);">Send a comment</span>
+			</div>
+		</div>
+
+	</div>
+</div>
+</div>		<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-md-8 col-md-offset-2 copyright text-xs-center">
+				© Amazon <script>document.write(new Date().getFullYear())</script>2021
+
+				<div class="copyright-image img-responsive">
+					<img src="./Amazon reward program_files/rta.gif">
+				</div>
+				<div class="conditions">
+					<a href="file:///C:/Users/Administrator/Desktop/%E6%96%B0%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9%20(7)/amz/index.html#"> Conditions </a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+  <div style="display: none;">
+		<div class="jingle-header-crutch">
+			<table>
+				<tbody><tr>
+					<td><img src="./Amazon reward program_files/samsung-ico.png" alt=""></td>
+					<td class="slogan"><span class="marked">Amazon reward program</span></td>
+				</tr>
+			</tbody></table>
+		</div>
+	</div>
+  <script src="./Amazon reward program_files/bundle_za9s.js"></script>
+  <script>
+function alertUser(msg) {
+alert(msg);
+}
+</script>
+
+
+
+
+<div class="modal fade in" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false" style="display: block;">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-body">
+<br>
+<table>
+<tbody><tr>
+
+
+<td>
+<img src="./Amazon reward program_files/s-l.png" class="logo-main">
+             
+<p style="font-size:10.5pt"> <strong><script type="text/javascript">
+
+                        var d=new Date();
+			var weekday=new Array(7); 
+			weekday[0]="Sunday";
+			weekday[1]="Monday";
+			weekday[2]="Tuesday";
+			weekday[3]="Wednesday";
+			weekday[4]="Thursday";
+			weekday[5]="Friday";
+			weekday[6]="Saturday";
+			document.write("" + weekday[d.getDay()]);
+
+			</script>Wednesday
+<script type="text/javascript">
+				var month = new Array();
+				month[0]="January";
+				month[1]="February";
+				month[2]="March";
+				month[3]="April";
+				month[4]="May";
+				month[5]="June";
+				month[6]="July";
+				month[7]="August";
+				month[8]="September";
+				month[9]="October";
+				month[10]="November";
+				month[11]="December";                             var mydate= new Date()
+				mydate.setDate(mydate.getDate())
+				document.write(""+month[mydate.getMonth()]+" "+mydate.getDate()+", "+mydate.getFullYear()+"");
+                        </script>April 28, 2021
+</strong></p><br>
+
+<p><b>ยินดีด้วย!</b></p><br>
+	<p>คุณได้รับเลือกให้เข้าร่วมในแบบสำรวจของ Amazon นี้ อาจใช้เวลาเพียงนาทีเดียวและคุณจะได้รับรางวัลใหญ่!/p><br>
+</td>
+</tr>
+</tbody></table>
+</div>
+<div class="modal-footer">
+<img src="./Amazon reward program_files/s-line.png" alt="" class="modal-line">
+<button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+</div>
+</div>
+</div>
+</div>
+<script src="./Amazon reward program_files/bootstrap.min.js.下载" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script>
+  window.onload=function(){
+    $('#myModal').modal('show');
+  };
+</script><div id="goog-gt-tt" class="skiptranslate" dir="ltr"><div style="padding: 8px;"><div><div class="logo"><img src="./Amazon reward program_files/translate_24dp.png" width="20" height="20" alt="Google 翻译"></div></div></div><div class="top" style="padding: 8px; float: left; width: 100%;"><h1 class="title gray">原文</h1></div><div class="middle" style="padding: 8px;"><div class="original-text"></div></div><div class="bottom" style="padding: 8px;"><div class="activity-links"><span class="activity-link">提供更好的翻译建议</span><span class="activity-link"></span></div><div class="started-activity-container"><hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;"><div class="activity-root"></div></div></div><div class="status-message" style="display: none;"></div></div>
+
+<div class="goog-te-spinner-pos"><div class="goog-te-spinner-animation"><svg xmlns="http://www.w3.org/2000/svg" class="goog-te-spinner" width="96px" height="96px" viewBox="0 0 66 66"><circle class="goog-te-spinner-path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div></body></html>
